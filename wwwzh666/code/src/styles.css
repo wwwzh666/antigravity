@@ -249,6 +249,15 @@ canvas {
   white-space: pre;
 }
 
+.word {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.space {
+  display: inline;
+}
+
 .typed-cursor {
   position: absolute;
   width: auto;

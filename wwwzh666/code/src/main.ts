@@ -4,9 +4,10 @@ import { siteData } from './data';
 import { ParticleScene } from './particle-scene';
 
 function chars(text: string): string {
-  return Array.from(text)
-    .map((character) => `<span class="char">${character === ' ' ? '&nbsp;' : character}</span>`)
-    .join('');
+  return text
+    .split(' ')
+    .map((word) => `<span class="word">${Array.from(word).map((character) => `<span class="char">${character}</span>`).join('')}</span>`)
+    .join('<span class="space">&nbsp;</span>');
 }
 
 function renderApp(): void {
