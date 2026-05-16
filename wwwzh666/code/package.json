@@ -1,0 +1,32 @@
+{
+  "name": "antigravity-replica",
+  "version": "1.0.0",
+  "description": "Google Antigravity landing animation replica for coding exam question 2.",
+  "private": true,
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "tsc && vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "screenshot": "node scripts/capture-screenshots.mjs",
+    "prompt:evidence": "node scripts/create-prompt-evidence.mjs"
+  },
+  "keywords": [
+    "antigravity",
+    "threejs",
+    "gsap",
+    "vite"
+  ],
+  "author": "wwwzh666",
+  "license": "UNLICENSED",
+  "type": "module",
+  "dependencies": {
+    "@vitejs/plugin-basic-ssl": "^2.3.0",
+    "gsap": "^3.15.0",
+    "three": "^0.184.0"
+  },
+  "devDependencies": {
+    "playwright": "^1.60.0",
+    "typescript": "^6.0.3",
+    "vite": "^8.0.13"
+  }
+}

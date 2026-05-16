@@ -1,0 +1,9 @@
+node_modules/
+dist/
+.DS_Store
+.env
+.env.*
+*.log
+wwwzh666/code/node_modules/
+wwwzh666/code/dist/
+wwwzh666/code/.vite/
